@@ -1,0 +1,23 @@
+.box::before {
+  /* @apply content-[''] absolute bg-[conic-gradient(#2d1aff_20deg,transparent_120deg)] w-full h-full z-[-1] animate-fullSpin; */
+  /* your additional rules go here */
+}
+
+.box::after {
+  /* @apply bg-[#0b0b0b] content-[''] z-[0] w-[94%] h-[94%] absolute; */
+}
+
+.box {
+  /* overflow: hidden; */
+}
+
+.navlinks:hover .nav-bg {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  filter: blur(0px);
+}
+
+.navlinks:hover .toggle-btn div {
+  background-color: black;
+}

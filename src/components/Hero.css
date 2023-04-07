@@ -1,0 +1,13 @@
+.title {
+  text-shadow: 0.8px 0.8px #000000a5;
+}
+
+.title-clone {
+  clip-path: polygon(
+    0 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * 0.4%) 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * -0.4%) 100%,
+    0 100%
+  );
+  text-shadow: 0.8px 0.8px #000000a5;
+}
