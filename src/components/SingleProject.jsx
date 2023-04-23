@@ -44,13 +44,13 @@ const SingleProject = ({
   return (
     <>
       <div
-        className={`relative rounded-xl group shadow-lg bg-gradient-to-t from-[#1b1b1b] to-[#090909] select-none  duration-1000  ${
+        className={`relative rounded-xl group shadow-lg bg-gradient-to-t from-[#1b1b1b] to-[#090909] select-none duration-1000 ${
           showProject
-            ? "absolute top-0 left-0 h-auto w-[80%] min-w-[450px] flex flex-col justify-center items-center scroll-hidden mx-auto p-8"
+            ? "absolute top-0 left-0 h-auto w-[80%] min-w-[450px] flex flex-col justify-center items-center scroll-hidden mx-auto p-4 md:p-8"
             : " cursor-pointer"
         } ${
           isProjectClicked && !showProject
-            ? "h-[0px] w-[0px] opacity-0 absolute z-[-10] blur-xl"
+            ? "h-[0px] w-[0px] opacity-0 absolute z-[-10] blur-lg"
             : "w-[500px] m-4 p-8"
         }`}
         onClick={handleOpen}
@@ -66,10 +66,10 @@ const SingleProject = ({
           className={`${
             showProject
               ? "inset-0 bg-gradient-to-r from-redOrange2 to-red-700 absolute filter opacity-75 blur-md z-[-1] rounded-xl animate-ringTilt"
-              : "inset-0 bg-gradient-to-r from-redOrange3 to-redOrange absolute filter opacity-75 blur-sm z-[-1] rounded-xl animate-ringTilt group-hover:brightness-150 group-hover:blur-xl transition duration-1000 group-hover:duration-300"
-          }`}
+              : "inset-0 bg-gradient-to-r from-redOrange3 to-redOrange absolute filter opacity-75 blur-sm  rounded-xl animate-ringTilt group-hover:brightness-150 group-hover:blur-xl transition duration-1000 group-hover:duration-300"
+          } z-[-1]`}
         ></div>
-        {/* Code/Source buttons */}
+        {/* Code and Source buttons */}
         <div
           className={`flex justify-around items-center w-full absolute bottom-0 translate-y-1/2 left-0 ${
             !showProject &&

@@ -4,11 +4,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Inconsolata:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
 
 body {
-  background-color: #0a0a0a;
+  /* background-color: #0a0a0a; */
+  background-image: url("../public/assets/bg.jpeg");
+  background-size: contain;
   font-family: "Poppins", -apple-system, sans-serif, "Segoe UI", Tahoma, Geneva,
     Verdana, sans-serif;
   color: aliceblue;
+  background-repeat: repeat-y;
   overflow-x: hidden;
+}
+
+/* Dark bg overlay */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* backdrop-filter: blur(5px); */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 .text-gradient {

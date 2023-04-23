@@ -33,7 +33,8 @@ const Projects = () => {
 
   return (
     <section id="projects" className="min-h-screen p-8">
-      <div className="w-full flex flex-col md:flex-row items-center justify-between p-12">
+      {/* Paragraph and image */}
+      <div className="w-full flex flex-col md:flex-row items-center justify-between md:p-12 p-4">
         <div
           ref={titleRef}
           className={`max-w-[600px] p-4 ${
@@ -44,7 +45,7 @@ const Projects = () => {
             Projects
             <hr className="border-b-2 w-[120%] border-redOrange" />
           </h2>
-          <p className="text-lg mt-4">
+          <p className="text-base md:text-lg mt-4">
             <strong>Check out some of the projects I've built!</strong> Using a
             variety of cutting-edge web development skills and tools, I've
             created innovative apps and websites that showcase my expertise and
@@ -67,9 +68,10 @@ const Projects = () => {
         </div>
       </div>
       <hr className="w-[80%] mx-auto border-[1.3px] border-gray-400/50 my-8" />
+      {/* Projects container */}
       <div
         ref={projectSectionRef}
-        className={`flex flex-wrap bg-[#1b1b1b]/20 relative duration-500 rounded-xl p-2 items-center ${
+        className={`flex flex-wrap relative duration-500 rounded-xl p-2 items-center ${
           !isProjectClicked ? "gap-y-3 justify-evenly" : "justify-center"
         }`}
       >

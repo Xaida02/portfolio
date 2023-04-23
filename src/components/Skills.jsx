@@ -30,13 +30,15 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills" className="mt-[200px]">
-      <div className="p-12 flex justify-between items-center flex-col md:flex-row">
-        <div className="flex justify-center flex-col items-center">
+    <section id="skills" className="mt-[200px] p-8">
+      {/* Paragraph and image */}
+      <div className="w-full flex flex-col md:flex-row items-center justify-between md:p-12 p-4">
+        {" "}
+        <div className="flex justify-center flex-col items-center mb-4 md:mb-0">
           {/* Image div */}
           <div
             ref={imageRef}
-            className={`text-gray-200 max-w-[600px] mx-auto flex justify-center items-center relative ${
+            className={`text-gray-200 max-w-[600px] mx-auto flex justify-center items-centerrelative ${
               !showImage ? "opacity-0" : "fade-in-second"
             }`}
           >
@@ -66,7 +68,7 @@ const Skills = () => {
         </div>
         <div
           ref={titleRef}
-          className={`max-w-[600px] mt-12 md:mt-0 flex flex-col justify-between items-start ${
+          className={`max-w-[600px] p-4 ${
             !showTitle ? "opacity-0" : "fade-in-first"
           }`}
         >
@@ -74,7 +76,7 @@ const Skills = () => {
             Skills
             <hr className="border-b-2 w-[120%] border-redOrange" />
           </h2>
-          <p className="text-lg pt-4">
+          <p className="text-base md:text-lg mt-4">
             <strong>
               I specialize in creating stunning user interfaces using today's
               most popular front-end framework, React.js.

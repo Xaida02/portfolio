@@ -60,34 +60,37 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-12">
-      <div className="flex flex-col md:flex-row items-center justify-between px-12">
+      <div className="flex flex-col md:flex-row items-center justify-between md:px-12">
         <div
           ref={titleRef}
-          className={`shadow-xl flex flex-col justify-center items-center max-w-[600px] p-4 rounded-lg bg-gradient-to-t to-[#1a1a1a] from-[#101010] relative group mb-12 z-10 md:mb-0`}
+          className={`shadow-xl flex flex-col justify-center items-center max-w-[90%] md:max-w-[600px] p-4 rounded-lg bg-gradient-to-t to-[#1a1a1a] from-[#101010] relative group mb-12 z-10 md:mb-0 max-h-[500px]`}
         >
-          <h2 className="text-4xl tracking-wide font-bold py-2 text-redOrange">
+          <h2 className="text-lg md:text-4xl tracking-wide font-bold py-2 text-redOrange flex justify-center items-center">
             tejada.v.tobias@gmail.com
             {/* <hr className="border-2 border-redOrange mx-auto w-[85%]" /> */}
           </h2>
-          <p className="p-2 text-[20px] text-gray-200">
+          <p className="p-2 text-[15px] md:text-[20px] text-gray-200">
             As a highly motivated and eager junior front end developer, I've
-            build this portfolio in order to demonstrate my abilities and
-            expertise.
+            build this portfolio in order to demonstrate my{" "}
+            <strong>abilities and expertise.</strong>
             <br /> If you're looking for a dedicated and passionate developer to
             join your team, I would love the opportunity to connect with you and
-            discuss how my skills can benefit your organization.
+            discuss how my skills can <strong>benefit your organization</strong>
+            .
             <br /> Feel free to reach out to me on the following platforms or in
-            the form below via your email. I am always available and ready to
-            take on new challenges.
+            the form below via your email.{" "}
+            <strong>
+              I am always available and ready to take on new challenges.
+            </strong>
           </p>
           <div className="p-4 flex justify-around items-center text-3xl w-full text-gray-200">
-            <a href="">
+            <a href="" target="_blank">
               <FaGithub className="transition duration-200 hover:text-redOrange hover:scale-105" />
             </a>
-            <a href="">
+            <a href="" target="_blank">
               <FaLinkedin className="transition duration-200 hover:text-redOrange hover:scale-105" />
             </a>
-            <a href="">
+            <a href="" target="_blank">
               <FaInstagram className="transition duration-200 hover:text-redOrange hover:scale-105" />
             </a>
           </div>
@@ -95,12 +98,12 @@ const Contact = () => {
         </div>
         <div
           ref={formRef}
-          className={`relative mt-12 md:mt-0 w-[400px] h-[500px] shadow-2xl bg-blue-900 group rounded-lg ${
+          className={`relative my-12 md:my-0 w-[90%] md:max-w-[400px] h-[500px] shadow-2xl bg-blue-900 group rounded-lg ${
             !showContactForm ? "opacity-0" : "fade-in-from-bottom-2"
           }`}
         >
           <form
-            className="flex flex-col justify-center px-14 py-12 z-[1] relative"
+            className="flex flex-col justify-center px-7 py-6  md:px-14 md:py-12 z-[1] relative"
             onSubmit={handleSent}
           >
             <label htmlFor="" className="font-bold mb-2 text-gray-200">

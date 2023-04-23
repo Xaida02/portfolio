@@ -85,9 +85,9 @@ const Hero = () => {
             Front End Developer
             <span className="text-redOrange3/70 ml-2">{"</>"}</span>
             {/* Animated title divs */}
-            <div className="w-1/2 h-[135%] left-0 bg-jumpBlue3 rounded-2xl opacity-20 filter blur-2xl absolute mix-blend-multiply animate-blobing animation-delay-2000 opacity"></div>
+            <div className="w-1/2 h-[135%] left-0 bg-redOrange rounded-2xl opacity-20 filter blur-2xl absolute mix-blend-multiply animate-blobing animation-delay-2000 opacity"></div>
             <div className="w-1/2 h-[135%] left-1/3 transform translate-x-1/2 bg-purple-900 redOrange rounded-2xl opacity-20 filter blur-2xl absolute mix-blend-multiply animate-blobing opacity"></div>
-            <div className="w-1/2 h-[135%] right-0 bg-redOrange rounded-2xl opacity-20 filter blur-2xl absolute mix-blend-multiply animate-blobing animation-delay-4000 opacity"></div>
+            <div className="w-1/2 h-[135%] right-0 bg-jumpBlue3 rounded-2xl opacity-20 filter blur-2xl absolute mix-blend-multiply animate-blobing animation-delay-4000 opacity"></div>
             {/* End of animated title divs */}
           </h1>
           <h1 className="cursor-pointer text-center text-3xl sm:text-4xl font-bold tracking-[3px] absolute title-clone text-redOrange2 ">
