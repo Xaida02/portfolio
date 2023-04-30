@@ -46,12 +46,12 @@ const SingleProject = ({
       <div
         className={`relative rounded-xl group shadow-lg bg-gradient-to-t from-[#1b1b1b] to-[#090909] select-none duration-1000 ${
           showProject
-            ? "absolute top-0 left-0 h-auto w-[80%] min-w-[450px] flex flex-col justify-center items-center scroll-hidden mx-auto p-4 md:p-8"
+            ? "absolute top-0 left-0 w-[95%] h-[220px] sm:h-auto md:min-w-[450px] flex flex-col justify-center items-center scroll-hidden mx-auto p-1 md:p-8"
             : " cursor-pointer"
         } ${
           isProjectClicked && !showProject
             ? "h-[0px] w-[0px] opacity-0 absolute z-[-10] blur-lg"
-            : "w-[500px] m-4 p-8"
+            : "w-[500px] m-4 p-4 md:p-8"
         }`}
         onClick={handleOpen}
         id={id}
@@ -76,24 +76,26 @@ const SingleProject = ({
             "opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200"
           }`}
         >
+          {/* Go to page btn */}
           <a href={pageLink} target="_blank">
             <p
               className={`py-2 bg-gradient-to-t from-[#1b1b1b] to-[#090909]  uppercase rounded font-bold flex items-center ${
                 showProject
-                  ? "text-redOrange2 text-2xl px-6"
-                  : "text-redOrange3 text-lg px-4"
+                  ? "text-redOrange2 text-sm md:text-xl px-2 md:px-6"
+                  : "text-redOrange3 text-lg px-2 md:px-4"
               }`}
             >
               <BsAppIndicator className="mr-2" />
               Page
             </p>
           </a>
+          {/* Go to code btn */}
           <a href={codeLink} target="_blank">
             <p
               className={`py-2 bg-gradient-to-t from-[#1b1b1b] to-[#090909] uppercase rounded font-bold flex items-center ${
                 showProject
-                  ? "text-redOrange2 text-2xl px-6"
-                  : "text-redOrange3 text-lg px-4"
+                  ? "text-redOrange2 text-sm md:text-xl px-2 md:px-6"
+                  : "text-redOrange3 text-lg px-2 md:px-4"
               }`}
             >
               <FaCode className="mr-2" />
@@ -121,12 +123,11 @@ const SingleProject = ({
       {/* Close button */}
       <button
         onClick={handleClose}
-        className={`text-red-600 text-2x absolute z-[500] right-8 top-8 p-2 border-redOrange duration-300 rounded shadow-lg hover:text-redOrange  group ${
+        className={`flex flex-col items-center justify-center text-gray-300 bg-[#0e0e0e] md:text-2xl absolute z-[500] right-0 top-0 -translate-x-[75%] translate-y-[75%] md:-translate-x-[100%] md:translate-y-[100%] p-1 border-text-gray-400 duration-300 rounded-full shadow-lg ${
           showProject ? "" : "opacity-0 invisible"
         }`}
       >
-        <AiOutlineClose size={30} />
-        <hr className="border-red-600 border-[1.25px] duration-300 group-hover:border-redOrange" />
+        <AiOutlineClose />
       </button>
     </>
   );

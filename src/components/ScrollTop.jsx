@@ -28,7 +28,7 @@ const ScrollTop = () => {
   return (
     <button
       onClick={scrollTop}
-      className={`text-gray-300 flex justify-center items-center animate-bounce fixed bottom-[10px] right-[25px] w-[30px] h-[30px] shadow-lg sm:w-[35px] sm:h-[35px] duration-500 ${
+      className={`text-gray-300 flex justify-center items-center animate-bounce fixed bottom-[10px] right-[25px] w-[40px] h-[40px] shadow-lg sm:w-[35px] sm:h-[35px] duration-500 ${
         showBackToTopButton ? "rounded bg-[#151515]" : "bg-[#1b1b1b]"
       }`}
       style={{

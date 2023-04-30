@@ -108,22 +108,22 @@ const Hero = () => {
       {/* Image and shape background */}
       <div
         ref={imageRef}
-        className={`mt-12 md:my-0 relative p-8 hover:brightness-110 transition-all ${
+        className={`mt-12 md:my-0 relative p-8 transition-all ${
           showImage ? "fade-in-first" : "opacity-0"
         }`}
       >
-        <div className="flex flex-col w-[500px]">
+        <div className="flex flex-col w-[400px] md:w-[550px]">
           <img
             loading="lazy"
-            src="./assets/me(test).png"
-            className="w-full rounded-full -mt-24"
+            src="./assets/me.png"
+            className="w-full rounded-full -mt-24 filter contrast-150"
             alt="Tobias"
           />
-          <div className="w-[55%] rounded-full h-[30px] bg-gray-900/90 -mt-8  blur-xl mx-auto"></div>
+          <div className="w-[45%] rounded-full z-[2] h-[40px] bg-gradient-to-r from-redOrange via-purple-900 to-jumpBlue3 filter blur-xl -mt-8 mx-auto"></div>
         </div>
-        <div className="absolute w-72 h-72 rounded-full bg-redOrange mix-blend-multiply opacity-50 top-0 left-4 z-[-4] filter blur-xl animate-blobing"></div>
-        <div className="absolute w-72 h-72 rounded-full bg-jumpBlue mix-blend-multiply opacity-50 top-0 right-4 z-[-5] filter blur-xl animate-blobing animation-delay-2000"></div>
-        <div className="absolute w-72 h-72 rounded-full bg-purple-900 mix-blend-multiply opacity-50 bottom-8 left-1/4 z-[-4] filter blur-xl animate-blobing animation-delay-4000"></div>
+        <div className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full bg-redOrange mix-blend-multiply opacity-50 top-0 left-4 z-[-4] filter blur-xl animate-blobing"></div>
+        <div className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full bg-jumpBlue mix-blend-multiply opacity-50 top-0 right-4 z-[-5] filter blur-xl animate-blobing animation-delay-2000"></div>
+        <div className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full bg-purple-900 mix-blend-multiply opacity-50 bottom-8 left-1/4 z-[-4] filter blur-xl animate-blobing animation-delay-4000"></div>
       </div>
     </section>
   );

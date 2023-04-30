@@ -38,7 +38,7 @@ const Skills = () => {
           {/* Image div */}
           <div
             ref={imageRef}
-            className={`text-gray-200 max-w-[600px] mx-auto flex justify-center items-centerrelative ${
+            className={`text-gray-200 max-w-[600px] mx-auto flex justify-center items-center relative ${
               !showImage ? "opacity-0" : "fade-in-second"
             }`}
           >
@@ -90,7 +90,7 @@ const Skills = () => {
         </div>
       </div>
       {/* Cards container */}
-      <div className="relative w-[20%] h-screen mx-auto flex items-center justify-center group">
+      <div className="relative w-[20%] h-[70vh] md:h-screen mx-auto flex items-center justify-center group">
         {/* Little card */}
         <div className="flex items-center justify-center absolute rounded-xl aspect-[5/7] transform-gpu transition-card w-[12vmin] shadow-sm bg-gradient-to-t from-black to-[#101010b5] text-redOrange3 group-hover:translate-x-[200%] group-hover:translate-y-[-125%] group-hover:rotate-[-15deg]">
           {" "}

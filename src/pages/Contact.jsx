@@ -63,7 +63,9 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row items-center justify-between md:px-12">
         <div
           ref={titleRef}
-          className={`shadow-xl flex flex-col justify-center items-center max-w-[90%] md:max-w-[600px] p-4 rounded-lg bg-gradient-to-t to-[#1a1a1a] from-[#101010] relative group mb-12 z-10 md:mb-0 max-h-[500px]`}
+          className={`shadow-xl flex flex-col justify-center items-center max-w-[90%] md:max-w-[600px] p-4 rounded-lg bg-gradient-to-t to-[#1a1a1a] from-[#101010] relative group mb-12 z-10 md:mb-0 max-h-[500px] ${
+            !showTitle ? "opacity-0" : "fade-in-from-bottom"
+          }`}
         >
           <h2 className="text-lg md:text-4xl tracking-wide font-bold py-2 text-redOrange flex justify-center items-center">
             tejada.v.tobias@gmail.com
