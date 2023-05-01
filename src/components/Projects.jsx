@@ -32,7 +32,7 @@ const Projects = () => {
   });
 
   return (
-    <section id="projects" className="mt-12 md:mt-[200px] min-h-screen md:p-8">
+    <section id="projects" className="mt-12 min-h-screen md:p-8">
       {/* Paragraph and image */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between md:p-12 p-4">
         <div
