@@ -32,7 +32,7 @@ const Projects = () => {
   });
 
   return (
-    <section id="projects" className="min-h-screen md:p-8">
+    <section id="projects" className="mt-12 md:mt-[200px] min-h-screen md:p-8">
       {/* Paragraph and image */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between md:p-12 p-4">
         <div
@@ -67,14 +67,14 @@ const Projects = () => {
           />
         </div>
       </div>
-      <hr className="w-[80%] mx-auto border-[1.3px] border-gray-400/50 my-8" />
       {/* Projects container */}
       <div
         ref={projectSectionRef}
-        className={`flex flex-wrap relative duration-500 rounded-xl p-2 items-center ${
+        className={`flex flex-wrap relative duration-500 mt-20 md:mt-2 rounded-xl p-2 items-center ${
           !isProjectClicked ? "gap-y-3 justify-evenly" : "justify-center"
         }`}
       >
+        <hr className="w-[80%] mx-auto border-[1.3px] border-gray-800/50 my-8" />
         {/*  BLurred lines */}
         <div className="absolute w-screen h-full top-0 left-0">
           <div className="bg-red-600 animate-blobing animation-delay-2000 rounded-full opacity-5 z-[-1] h-[100%] w-[400px] filter blur-[50px] top-0 absolute left-0 rotate-12"></div>
@@ -90,8 +90,8 @@ const Projects = () => {
             setIsProjectClicked={setIsProjectClicked}
           />
         ))}
+        <hr className="border-gray-800/50 w-[65%] pt-2 mx-auto" />
       </div>
-      <hr className="border-gray-400/50 w-[65%] pt-2 mx-auto" />
     </section>
   );
 };

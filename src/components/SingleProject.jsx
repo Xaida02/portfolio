@@ -61,6 +61,15 @@ const SingleProject = ({
           src={img}
           alt={name}
         />
+        {/* Close button */}
+        <button
+          onClick={handleClose}
+          className={`flex flex-col items-center justify-center text-gray-300 bg-[#0e0e0e] md:text-2xl absolute z-[500] right-0 top-0 p-1 border-text-gray-400 duration-300 rounded-full shadow-lg ${
+            showProject ? "" : "opacity-0 invisible z-[-100]"
+          }`}
+        >
+          <AiOutlineClose />
+        </button>
         {/* Ring inset animated */}
         <div
           className={`${
@@ -120,15 +129,6 @@ const SingleProject = ({
           </div>
         </div>
       )}
-      {/* Close button */}
-      <button
-        onClick={handleClose}
-        className={`flex flex-col items-center justify-center text-gray-300 bg-[#0e0e0e] md:text-2xl absolute z-[500] right-0 top-0 -translate-x-[75%] translate-y-[75%] md:-translate-x-[100%] md:translate-y-[100%] p-1 border-text-gray-400 duration-300 rounded-full shadow-lg ${
-          showProject ? "" : "opacity-0 invisible"
-        }`}
-      >
-        <AiOutlineClose />
-      </button>
     </>
   );
 };

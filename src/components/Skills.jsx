@@ -30,7 +30,7 @@ const Skills = () => {
   });
 
   return (
-    <section id="skills" className="mt-[200px] p-8">
+    <section id="skills" className="mt-12 md:mt-[200px] p-8">
       {/* Paragraph and image */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between md:p-12 p-4">
         {" "}

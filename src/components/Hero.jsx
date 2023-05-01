@@ -112,14 +112,14 @@ const Hero = () => {
           showImage ? "fade-in-first" : "opacity-0"
         }`}
       >
-        <div className="flex flex-col w-[400px] md:w-[550px]">
+        <div className="flex flex-col w-[425px] md:w-[550px]">
           <img
             loading="lazy"
             src="./assets/me.png"
-            className="w-full rounded-full -mt-24 filter contrast-150"
+            className="w-full rounded-b-full object-fit -mt-24 filter brightness-[0.85] contrast-150"
             alt="Tobias"
           />
-          <div className="w-[45%] rounded-full z-[2] h-[40px] bg-gradient-to-r from-redOrange via-purple-900 to-jumpBlue3 filter blur-xl -mt-8 mx-auto"></div>
+          <div className="w-[40%] rounded-full z-[2] h-[40px] bg-gradient-to-r from-redOrange via-purple-900 to-jumpBlue3 filter blur-xl birghtness-[0.85] -mt-8 mx-auto"></div>
         </div>
         <div className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full bg-redOrange mix-blend-multiply opacity-50 top-0 left-4 z-[-4] filter blur-xl animate-blobing"></div>
         <div className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full bg-jumpBlue mix-blend-multiply opacity-50 top-0 right-4 z-[-5] filter blur-xl animate-blobing animation-delay-2000"></div>

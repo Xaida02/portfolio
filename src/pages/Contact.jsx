@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-12">
+    <section id="contact" className="my-12">
       <div className="flex flex-col md:flex-row items-center justify-between md:px-12">
         <div
           ref={titleRef}
