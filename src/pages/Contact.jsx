@@ -108,34 +108,56 @@ const Contact = () => {
             className="flex flex-col justify-center px-7 py-6  md:px-14 md:py-12 z-[1] relative"
             onSubmit={handleSent}
           >
-            <label htmlFor="" className="font-bold mb-2 text-gray-200">
-              Name:
-            </label>
-            <input
-              name="name"
-              type="text"
-              required
-              className="shadow-lg p-2 mb-4 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-jumpBlue3"
-              placeholder="Jane Doe"
-            />
-            <label htmlFor="" className="font-bold mb-2 text-gray-200">
-              Email:
-            </label>
-            <input
-              name="user_email"
-              type="email"
-              required
-              className="shadow-lg p-2 mb-4 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-jumpBlue3"
-              placeholder="jane@example.com"
-            />
-            <label htmlFor="" className="font-bold mb-2 text-gray-200">
-              Message:
-            </label>
-            <textarea
-              name="message"
-              type="Message"
-              className="shadow-lg h-[120px] bg-gray-800 p-2 mb-4 resize-none focus:outline-none focus:ring-2 focus:ring-jumpBlue3 rounded"
-            />
+            <div className="relative my-6 flex items-center justify-center">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                className="peer shadow-lg placeholder-transparent p-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-jumpBlue3 w-[100%]"
+                placeholder="Jane Doe"
+              />
+              <label
+                htmlFor="name"
+                className="font-bold mb-2 text-gray-200 absolute transition-all duration-200 text-[16.5px] left-2 -top-8 peer-placeholder-shown:text-base peer-focus:text-[16.5px] peer-focus:text-gray-200 peer-placeholder-shown:text-gray-400
+                peer-focus:-top-8  peer-placeholder-shown:top-2"
+              >
+                Your name
+              </label>
+            </div>
+            <div className="relative my-6 flex items-center justify-center">
+              <input
+                name="user_email"
+                type="email"
+                id="email"
+                required
+                className="peer shadow-lg placeholder-transparent p-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-jumpBlue3 w-[100%]"
+                placeholder="jane@example.com"
+              />
+              <label
+                htmlFor="email"
+                className="font-bold mb-2 text-gray-200 absolute transition-all duration-200 text-[16.5px] left-2 -top-8 peer-placeholder-shown:text-base peer-focus:text-[16.5px] peer-focus:text-gray-200 peer-placeholder-shown:text-gray-400
+                peer-focus:-top-8  peer-placeholder-shown:top-2"
+              >
+                Email address
+              </label>
+            </div>
+            <div className="relative my-6 flex items-center justify-center">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="bla bla bla"
+                type="Message"
+                className="peer shadow-lg placeholder-transparent p-2 bg-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-jumpBlue3 w-[100%] h-[120px] resize-none"
+              />
+              <label
+                htmlFor="message"
+                className="font-bold mb-2 text-gray-200 absolute transition-all duration-200 text-[16.5px] left-2 -top-8 peer-placeholder-shown:text-base peer-focus:text-[16.5px] peer-focus:text-gray-200 peer-placeholder-shown:text-gray-400
+                peer-focus:-top-8  peer-placeholder-shown:top-2"
+              >
+                Message
+              </label>
+            </div>
             <button
               type="submit"
               className={`duration-300 select-none transition
